@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.video-container {
+    
+    background: #7a7a7a;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    height: 70vh;
+    width: 73%;
+}
+
+#video{
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.controls {
+    position: absolute;
+    width: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: -5%;
+    background-color: rgba(255,255,255,0.5);
+    z-index: 10;
+}
+
+.controls-up{
+    display: flex;
+    margin-bottom: 2%;
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+button {
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+input[type="range"] {
+    margin-right: 10px;
+}
+
+.progress-container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    margin-top: 9%;
+}
+
+#progressBar {
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+#currentTime, #totalTime {
+    margin: 0 5px;
+    font-size: 14px;
+    color: #fff;
+}
+
+
+#playPauseBtn{
+    margin-left: 10px;
+    margin-top: 2%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+#volumeSlider{
+    margin-top: 2%;
+    cursor: pointer;
+}
